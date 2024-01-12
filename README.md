@@ -1,1 +1,1 @@
-# 5ISS-Goalard-Lacoste
+# Microcontrollers & Open Source Hardware (M&OSH)

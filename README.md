@@ -16,3 +16,7 @@ This project is a sequel to the Gas Sensor conception did at the AIME lab in oct
 * Data communication via LoRa
 * Online data retrieving
 * Harware & PCB design
+
+## Technical realisation
+Let's look at the various project steps through the technical realisation point of view
+### Gas sensor conception

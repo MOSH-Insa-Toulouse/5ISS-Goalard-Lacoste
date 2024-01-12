@@ -27,3 +27,15 @@ The gas sensor designed for monitoring air quality is composed of two sensing el
 The sensor parts are described in the following schema :  
 
 ![Local Image](image1.png)
+
+The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. 
+
+### Data communication via LoRa
+Now we have a working sensor, we want to be able to send the retrieved data. To do so, we use LoRa protocol, and the gateway accessible at INSA via ChirpStack.
+In order to achieve the communication, we need a few elements :
+* LoRa communication module (RN2483)  
+* Gas sensor (MQ2)
+* Electonical card (Arduino UNO)
+
+
+#### 

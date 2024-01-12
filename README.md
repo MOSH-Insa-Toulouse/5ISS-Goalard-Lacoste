@@ -22,7 +22,7 @@ This project is a multidisciplinary work built around the use of a gas sensor. T
 Let's look at the different steps of the project through the technical realisation point of view.
 
 ### Gas sensor conception
-The gas sensor designed for monitoring air uality is composed of two sensing elements. Both are based on a combinaison of silicon substrate with tungsten trioxide nanoparticles, and allow to detect gas concentration regarding the variation of their conductivity. The sensor also integrate a temperature sensor, and only need a few mA to work.   
+The gas sensor designed for monitoring air quality is composed of two sensing elements. Both are based on a combinaison of silicon substrate with tungsten trioxide nanoparticles, and allow to detect gas concentration regarding the variation of their conductivity. The sensor also integrate a temperature sensor, and only need a few mA to work.   
 
 The sensor parts are described in the following schema :  
 

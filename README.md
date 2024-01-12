@@ -5,8 +5,9 @@ This repository contains all the work and related documents realised by Rémi an
 Here is what you can find in this file :
 * Course objectives
 * Project description & objectives
-* Project technical realisation
+* Technical realisation
 * Delivery
 * Conclusion
 
-#Course objectives
+## Course objectives
+The main objective of this class is to provide a transversal perspective of the creation of an IoT system. From the solution proposal to the end of system design, we take a look at all the conception steps, trying to merge both the hardware and software visions.

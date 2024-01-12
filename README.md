@@ -35,6 +35,7 @@ In order to achieve the communication, we need a few elements :
 * Electonical card (Arduino UNO)
 * LoRa communication module (RN2483), plugged to the UNO
 * Gas sensor (MQ2), plugged to the UNO
+  
 First, we look at the RN2483 datasheet and choose the pins to use to connect it to the Arduino UNO. We choosed as follow :
 
 ![Local Image](image1.png)

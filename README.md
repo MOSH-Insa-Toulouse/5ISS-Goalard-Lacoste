@@ -64,5 +64,9 @@ To test our system, we displayed the value measured by the sensor in the Arduino
 
 ## Delivery
 A short explaition in the files you can find in the various subdirectories :
-* Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino)
-* Node-RED flow used to intercept the data reissued by ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json)
+* Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
+* Node-RED flow used to intercept the data reissued by ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json).
+
+## Improvements
+These are a few ideas we had to improve our system but couldn't find time to do them :
+* Node-RED :  we display the data, but we could use existing dashboards to get a better view of gas concentrations.

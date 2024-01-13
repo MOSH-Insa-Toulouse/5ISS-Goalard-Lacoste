@@ -39,8 +39,8 @@ We use LTSpice to simulate the behavior of the system, here are the cutoff frequ
 
 | Filter | Frequency |
 |----------|----------|
-| 1, CHANGER | 16Hz |
-| 2, CHANGER | 1.6Hz |
+| 1, CHANGER | 16 Hz |
+| 2, CHANGER | 1.6 Hz |
 | 3, CHANGER | 1.6 kHz |
 
 

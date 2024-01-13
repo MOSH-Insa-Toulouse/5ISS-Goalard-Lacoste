@@ -1,4 +1,4 @@
-# Microcontrollers & Open Source Hardware (M&OSH)
+g# Microcontrollers & Open Source Hardware (M&OSH)
 This repository contains all the work and related documents realised by Rémi and David as part of the "Microcontroller & Open Source Hardware" major.  
 Here is what you can find in this file :
 * Course objectives
@@ -8,7 +8,6 @@ Here is what you can find in this file :
 * Improvements
 * Conclusion
   
-
 ## Course objectives
 The main objective of this class is to provide a transversal perspective of the creation of an IoT system. From the solution proposal to the end of system design, we take a look at all the conception steps, trying to merge both the hardware and software requirements.
 
@@ -29,11 +28,12 @@ The sensor parts are described in the following schema :
 ![Local Image](image1.png)
 
 The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an empliifier wircuit. It is composed as follow :
-* Gas sensor conception
-* Data communication via LoRa
-* Hardware & PCB design
+* Low-pass filter for input current noise : CHANGER
+* Actif filter : CHANGER
+* Output low-pass filter : CHANGER
 
 ![Local Image](image2.png)  !CHANGER
+
 
 
 

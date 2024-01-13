@@ -44,6 +44,7 @@ The chosen pins are welded,  then the module is connected to the arduino using w
 
 <img src="image3.jpg" alt="Description" width="300"/>
 
-![Local Image](image4.jpg)
+<img src="image4.jpg" alt="Description" width="300"/>
+
 
 #### 

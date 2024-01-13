@@ -44,6 +44,8 @@ The chosen pins are welded,  then the module is connected to the arduino using w
 
 <img src="image3.jpg" alt="Description" width="328"/>   <img src="image4.jpg" alt="Description" width="300"/>
 
+Once the LoRa module is connected to the Arduino UNO, we want to connect to ChirpStack, which will lend us a gateway to the collected data via LoRa. To do so, we modify an existing Arduino code by adding the credentials to connect to our 'ChirpStack' space. The 
+
 
 
 

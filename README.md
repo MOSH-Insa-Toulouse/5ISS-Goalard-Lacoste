@@ -29,10 +29,19 @@ The sensor parts are described in the following schema :
 
 The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an empliifier wircuit. It is composed as follow :
 * Low-pass filter for input current noise : CHANGER
-* Actif filter : CHANGER
+* Actif filter to reduce 50Hz noise : CHANGER
 * Output low-pass filter : CHANGER
+* Gas sensor : CHANGER
 
 ![Local Image](image2.png)  !CHANGER
+
+We use LTSpice to simulate the behavior of the system, here are the cutoff frequency of each filter :
+
+| Filter | Frequency |
+|----------|----------|
+| 1, CHANGER | 16Hz |
+| 2, CHANGER | 1.6Hz |
+| 3, CHANGER | 1.6 kHz |
 
 
 

@@ -5,6 +5,7 @@ Here is what you can find in this file :
 * Project description
 * Technical realisation
 * Delivery
+* Improvements
 * Conclusion
   
 
@@ -48,10 +49,14 @@ To send data using LoRa from the INSA, we have to use a gateway accessible throu
 * Connect to the gateway using our specific credentials
 * Retrieve data measured by the gas sensor
 * Encode data from the sensor as bytes
-* Transform the data as base 32, the one used by ChirpStack
 * Use 'TheThingsNetwork' library, that allows to send data to ChirpStack gateway as bytes
 
-  
 You can find the Arduino code [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
+
+Now the data from the gas sensor can be send out using the gateway, the last step is to make the emitted data accessible. To do it, we use Node-RED and retrieve the data sent from ChirpStack as MQTT packets. We therefore use a function to decode the received data, as ChirpStack send them using base 64, and post a text of the final value : 
+
+![Local Image](image1.png)
+
+To test our system, we displayed the value measured by the sensor in the Arduino IDE, and displayed the same value after getting it on Node-RED. We fortunately displayed twice the same value.
 
 #### 

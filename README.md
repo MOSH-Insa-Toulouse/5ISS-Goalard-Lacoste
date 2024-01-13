@@ -38,7 +38,7 @@ In order to achieve the communication, we need a few elements :
   
 First, we look at the RN2483 datasheet and choose the pins to use to connect it to the Arduino UNO :
 
-![Local Image](image1.png)
+![Local Image](image2.png)
 
 
 #### 

@@ -60,3 +60,9 @@ Now the data from the gas sensor can be send out using the gateway, the last ste
 To test our system, we displayed the value measured by the sensor in the Arduino IDE, and displayed the same value after getting it on Node-RED. We fortunately displayed twice the same value.
 
 #### 
+
+
+## Delivery
+A short explaition in the files you can find in the various subdirectories :
+* Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino)
+* Node-RED connection to the data reissued by ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino)

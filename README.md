@@ -40,13 +40,17 @@ First, we use the RN2483 datasheet and choose the pins to use to connect it to t
 
 ![Local Image](image2.png)
 
-The chosen pins are welded,  then the module is connected to the arduino using wires and a breadboard :
+The chosen pins are welded, then the module is connected to the arduino using wires and a breadboard :
 
 <img src="image3.jpg" alt="Description" width="328"/>   <img src="image4.jpg" alt="Description" width="300"/>
 
-Once the LoRa module is connected to the Arduino UNO, we want to connect to ChirpStack, which will lend us a gateway to the collected data via LoRa. To do so, we modify an existing Arduino code by adding the credentials to connect to our 'ChirpStack' space. The 
-
-
+To send data using LoRa from the INSA, we have to use a gateway accessible through ChirpStack framework. We reused an already existing Arduino code modified as follow :
+* Connect to the gateway using our specific credentials
+* Retrieve data measured by the gas sensor
+* Encode data from the sensor as bytes
+* Transform the data as base 32, the one used by ChirpStack
+* Use 'TheThingsNetwork' library, that allows to send data to ChirpStack gateway as bytes
+You can find the Arduino code [Capteur_Gaz.ino](https://github.com/your-username/your-repository/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
 
 
 #### 

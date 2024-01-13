@@ -50,7 +50,6 @@ To send data using LoRa from the INSA, we have to use a gateway accessible throu
 * Encode data from the sensor as bytes
 * Transform the data as base 32, the one used by ChirpStack
 * Use 'TheThingsNetwork' library, that allows to send data to ChirpStack gateway as bytes
-You can find the Arduino code [Capteur_Gaz.ino](https://github.com/patatorfr/5ISS-Goalard-Lacoste/Capteur_Gaz/Capteur_Gaz.ino).
-
+You can find the Arduino code [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
 
 #### 

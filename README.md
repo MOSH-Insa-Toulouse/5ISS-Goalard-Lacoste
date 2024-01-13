@@ -44,7 +44,7 @@ The chosen pins are welded, then the module is connected to the arduino using wi
 
 <img src="image3.jpg" alt="Description" width="328"/>   <img src="image4.jpg" alt="Description" width="300"/>
 
-To send data using LoRa from the INSA, we have to use a gateway accessible through ChirpStack framework. We reused an already existing Arduino code modified as follow :
+To send data using LoRa from the INSA, we have to use a gateway accessible through ChirpStack framework. We reuse an already existing Arduino code modified as follow :
 * Connect to the gateway using our specific credentials
 * Retrieve data measured by the gas sensor
 * Encode data from the sensor as bytes

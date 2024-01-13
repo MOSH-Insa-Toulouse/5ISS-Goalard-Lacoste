@@ -1,0 +1,168 @@
+[
+    {
+        "id": "ac21d3f83634ca89",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "59217fb019da9f68",
+        "type": "mqtt in",
+        "z": "ac21d3f83634ca89",
+        "name": "",
+        "topic": "application/85516cc1-30a6-4302-a942-5d7a36dd7aaa/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a11ad95944483680",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "4d8e49d457968188"
+            ]
+        ]
+    },
+    {
+        "id": "4d8e49d457968188",
+        "type": "json",
+        "z": "ac21d3f83634ca89",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "ed76281f75ba32c0",
+                "6e45a2e0e5fecca7"
+            ]
+        ]
+    },
+    {
+        "id": "ed76281f75ba32c0",
+        "type": "debug",
+        "z": "ac21d3f83634ca89",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 830,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "940660ecc02cba06",
+        "type": "debug",
+        "z": "ac21d3f83634ca89",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6e45a2e0e5fecca7",
+        "type": "function",
+        "z": "ac21d3f83634ca89",
+        "name": "function 2",
+        "func": "//var temp=msg.payload.data;\n\nlet buff = new  Buffer(msg.payload.data,'base64');\nlet temp = buff[0] + buff[1]*256;\n\nlet text = buff.toString('ascii'); \nlet val = text.charCodeAt(0);\n\n//flow.set(\"gaz\",temp);\n\nreturn {\"payload\":temp};\nreturn({payload:temp});",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 380,
+        "wires": [
+            [
+                "940660ecc02cba06",
+                "87c94b0dd5412a9f"
+            ]
+        ]
+    },
+    {
+        "id": "87c94b0dd5412a9f",
+        "type": "ui_text",
+        "z": "ac21d3f83634ca89",
+        "group": "3356fffd4617b04d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 990,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a11ad95944483680",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "srv-chirpstack.insa-toulouse.fr",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "application/85516cc1-30a6-4302-a942-5d7a36dd7aaa",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3356fffd4617b04d",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "30c3b62b91f55296",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "30c3b62b91f55296",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

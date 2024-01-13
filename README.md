@@ -41,6 +41,9 @@ First, we use the RN2483 datasheet and choose the pins to use to connect it to t
 ![Local Image](image2.png)
 
 The chosen pins are welded,  then the module is connected to the arduino using wires and a breadboard :
-![Local Image](image3.jpg) ![Local Image](image4.jpg)
+
+<img src="image3.jpg" alt="Description" width="300"/>
+
+![Local Image](image4.jpg)
 
 #### 

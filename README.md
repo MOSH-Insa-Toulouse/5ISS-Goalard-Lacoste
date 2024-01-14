@@ -76,8 +76,14 @@ Now the data from the gas sensor can be send out using the gateway, the last ste
 To test our system, we displayed the value measured by the sensor in the Arduino IDE, and displayed the same value after getting it on Node-RED. We fortunately displayed twice the same value.
 
 ### Hardware & PCB design
-In the previous part, we used a breadboard to connect the sensor to the Arduino. Now that we know that our system is capable of retrieving values and sending them, then we can look at its physical integration. The objective is therefore to designed a shield destined to be plugged directly on the Arduino board. 
-First, 
+In the previous part, we used a breadboard to connect the sensor to the Arduino. This is not an optimal solution, so we use KiCad to design a shield that can be directly plugged on the Arduino board.  
+First, let's have a look at the various components of the shield :
+* Connect to the gateway using our specific credentials
+* Retrieve data measured by the gas sensor
+* Encode data from the sensor as bytes
+* Use 'TheThingsNetwork' library, that allows to send data to ChirpStack gateway as bytes
+
+
 
 
 ## Delivery

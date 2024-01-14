@@ -93,7 +93,8 @@ First, let's have a look at the various components of the shield :
 * Amplifier circuit
   This circuit is build based on LTC1050 operational amplifier, a few resistors and capacitors, and a variable resistor.
 * Variable resistor   
-  As our sensor contains an intern heating resistor, we need to use a variable resistor to adapt the input current and assure it stay in the same range (not to low so the ADC can see it, but not too high so we don't kill the Arduino). The resistor is controlled directly from the Arduino, which allows us to know the 'transformation' done to the current. Using it, we assure a proper functioning of the Arduino, and are still able to provide a good measurement of the gas concentration.
+  As our sensor contains an intern heating resistor, we need to use a variable resistor to adapt the input current and assure it stay in the same range (not to low so the ADC can see it, but not too high so we don't kill the Arduino). The resistor is controlled 
+  directly from the Arduino, which allows us to know the 'transformation' done to the current. Using it, we assure a proper functioning of the Arduino, and are still able to provide a good measurement of the gas concentration.
 
 ## Delivery
 A short explaition in the files you can find in the various subdirectories :

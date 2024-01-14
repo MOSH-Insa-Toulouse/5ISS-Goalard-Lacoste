@@ -114,6 +114,8 @@ All the files and work on KiCad (schematics & routing) are accesible here A CHAN
 A short explanation about the files you can find in the various subdirectories :
 * Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
 * Node-RED flow used to intercept the data reissued from ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json).
+* A AJOUTER
+* A AJOUTER
 
 ## Improvements
 These are a few ideas we had to improve our system but couldn't find time to do :

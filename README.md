@@ -119,5 +119,13 @@ These are a few ideas we had to improve our system but couldn't find time to do 
 
 ## Conclusion
 At the end of this class, we don't have a fully working gas sensor system, even less an optimized one. But it doesn't matter, because the real goal is not so much the complete realization of the project, but rather the global and multidisciplinary vision that it offers us. 
+
 For this work, we had to dive into both the hardware and software parts, and carry them out with their constraints while keeping in mind those of the overall project. This is not something usual, because on a more traditional project we limit ourselves to carrying out our own tasks without looking at what happens during the other stages of the process. As a result, this experience was a good opportunity to expand our capacity to do our part of the work while remembering it can have an impact on the others job, and how to not harden their jobs !
-Of course, we also build or reexplored some concepts about : electronics design / communcation protocols / Arduino coding / physics ...
+
+Of course, we also build or consolidated various concepts : 
+* Electronical circuit design (LTSpice / KiCad).
+* PCB design (KiCad).
+* Arduino coding.
+* LoRa communication protocol usage.
+* Node-RED.
+* Even welding !

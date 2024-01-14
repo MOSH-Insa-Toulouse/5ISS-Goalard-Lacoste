@@ -82,10 +82,14 @@ First, let's have a look at the various components of the shield :
 
 ![Local Image](image5.png)
 
-* test   
-  dddd
-* Retrieve data measured by the gas sensor
-* Encode data from the sensor as bytes
+* Arduino UNO board
+  Generic board provided by KiCad. 
+* Gas sensor   
+  We created a symbol for our manufactured gas sensor, using the 'Package_TO_SOT_THT:TO-5-10_Window' footprint.
+* Gas type switch   
+  As the gas sensor is capable of measuring 2 different gases, we use a switch to choose the one we want the informations from. It is composed of 2 resistors and a MOSFET transistor. The choice of the gas measured is done via the GPIO n°2 of the Arduino UNO.
+* LoRa connector
+  The LoRa module is a component 
 * Use 'TheThingsNetwork' library, that allows to send data to ChirpStack gateway as bytes
 
 

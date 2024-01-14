@@ -82,7 +82,7 @@ First, let's have a look at the various components of the shield :
 
 ![Local Image](image5.png)
 
-* test
+* test   
   dddd
 * Retrieve data measured by the gas sensor
 * Encode data from the sensor as bytes

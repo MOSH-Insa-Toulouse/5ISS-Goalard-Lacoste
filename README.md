@@ -76,7 +76,7 @@ Now the data from the gas sensor can be send out using the gateway, the last ste
 To test our system, we displayed the value measured by the sensor in the Arduino IDE, and displayed the same value after getting it on Node-RED. We fortunately displayed twice the same value.
 
 ### Hardware & PCB design
-In the previous part, we used a dashboard to connect to the Arduino UNO. Now that we know that our system is capable of retrieving values and sending them, then we can look at its physical integration. The objective is therefore to designed a shield destined to be plugged directly on the Arduino board. 
+In the previous part, we used a breadboard to connect the sensor to the Arduino. Now that we know that our system is capable of retrieving values and sending them, then we can look at its physical integration. The objective is therefore to designed a shield destined to be plugged directly on the Arduino board. 
 First, 
 
 

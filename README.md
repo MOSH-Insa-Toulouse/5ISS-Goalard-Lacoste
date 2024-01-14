@@ -83,15 +83,20 @@ First, let's have a look at the various components of the shield :
 ![Local Image](image5.png)
 
 * Arduino UNO board :   
-  Generic board provided by KiCad.    
+  Generic board provided by KiCad.
+  
 * Gas sensor :    
-  We created a symbol for our manufactured gas sensor, using the 'Package_TO_SOT_THT:TO-5-10_Window' footprint.    
+  We created a symbol for our manufactured gas sensor, using the 'Package_TO_SOT_THT:TO-5-10_Window' footprint.
+  
 * Gas type switch :     
-  As the gas sensor is capable of measuring 2 different gases, we use a switch to choose the one we want the informations from. It is composed of 2 resistors and a MOSFET transistor. The choice of the gas measured is done via the GPIO n°2 of the Arduino UNO.     
+  As the gas sensor is capable of measuring 2 different gases, we use a switch to choose the one we want the informations from. It is composed of 2 resistors and a MOSFET transistor. The choice of the gas measured is done via the GPIO n°2 of the Arduino UNO.
+     
 * LoRa connector :   
-  We welded the LoRa module on a little PCB to have a better view/use of its pins. Therefore we just have to plug it on a connector to access the LoRa chip.      
+  We welded the LoRa module on a little PCB to have a better view/use of its pins. Therefore we just have to plug it on a connector to access the LoRa chip.
+  
 * Amplifier circuit :   
-  This circuit is build based on LTC1050 operational amplifier, a few resistors and capacitors, and a variable resistor.     
+  This circuit is build based on LTC1050 operational amplifier, a few resistors and capacitors, and a variable resistor.
+  
 * Variable resistor :      
   As our sensor contains an intern heating resistor, we need to use a variable resistor to adapt the input current and assure it stay in the same range (not to low so the ADC can see it, but not too high so we don't kill the Arduino). The resistor is controlled 
   directly from the Arduino, which allows us to know the 'transformation' done to the current. Using it, we assure a proper functioning of the Arduino, and are still able to provide a good measurement of the gas concentration.

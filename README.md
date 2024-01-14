@@ -35,7 +35,7 @@ The gas sensor was conceived in AIME in october, but we will use a commercial se
 
 ![Local Image](image2.png)  !CHANGER
 
-We use LTSpice to simulate the behavior of the system, here are the cutoff frequency of each filter :
+We use LTSpice to simulate the behavior of the system and find the cutoff frequency of each filter :
 
 | Filter | Frequency |
 |----------|----------|

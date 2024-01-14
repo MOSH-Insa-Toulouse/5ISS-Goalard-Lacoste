@@ -108,6 +108,8 @@ Here is the final version of our PCB :
 
 ![Local Image](image5.png)  A CHANGER
 
+All the files and work on KiCad (schematics & routing) are accesible here A CHANGER AUSSI
+
 ## Delivery
 A short explanation about the files you can find in the various subdirectories :
 * Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).

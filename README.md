@@ -98,14 +98,26 @@ First, let's have a look at the various components of the shield :
 
 
 The second step is to build the PCB of the shield using these components. As we were supposed to use INSA's equipement to print the PCB, our constraint was to use only one layer.  
+
 Here is the final version of our PCB :  
+
 ![Local Image](image5.png)  A CHANGER
 
 ## Delivery
-A short explaition in the files you can find in the various subdirectories :
+A short explanation about the files you can find in the various subdirectories :
 * Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
-* Node-RED flow used to intercept the data reissued by ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json).
+* Node-RED flow used to intercept the data reissued from ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json).
 
 ## Improvements
-These are a few ideas we had to improve our system but couldn't find time to do them :
+These are a few ideas we had to improve our system but couldn't find time to do :
 * Node-RED :  we display the data, but we could use existing dashboards to get a better view of gas concentrations.
+* PCB :  improve the design by ..................
+* Potentiometer control : write some code to control the potentiometer from the arduino, to get closer to real use.
+* Sensor programming : write some code to control the sensor, do the calibration, gas recognition... => make it as autonomous as possible.
+* End-to-end test : print the PCB, weld all the components and use it in a real applicatio, from data collection to retrieving via Node-RED.
+* Energy concumption : we followed the already existing path for the project, but we could take each step to look at the various components/electronic cards used and think about if they are or not the best in term of energy concumption. We could even go further and ask ourselves if there is a better alternative to do the gas measurements than the approach we implemented in this system.
+
+## Conclusion
+At the end of this class, we don't have a fully working gas sensor system, even less an optimized one. But it doesn't matter, because the real goal is not so much the complete realization of the project, but rather the global and multidisciplinary vision that it offers us. 
+For this work, we had to dive into both the hardware and software parts, and carry them out with their constraints while keeping in mind those of the overall project. This is not something usual, because on a more traditional project we limit ourselves to carrying out our own tasks without looking at what happens during the other stages of the process. As a result, this experience was a good opportunity to expand our capacity to do our part of the work while remembering it can have an impact on the others job, and how to not harden their jobs !
+Of course, we also build or reexplored some concepts about : electronics design / communcation protocols / Arduino coding / physics ...

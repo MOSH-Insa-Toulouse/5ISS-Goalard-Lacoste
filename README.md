@@ -42,11 +42,11 @@ We use LTSpice to simulate the behavior of the system and find the cutoff freque
 
 | Filter | Frequency |
 |----------|----------|
-| 1, CHANGER | 16 Hz |
+| 1 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino) | 16 Hz |
 | 2, CHANGER | 1.6 Hz |
 | 3, CHANGER | 1.6 kHz |
 
-
+ 1.6hz.png
 
 
 ### Data communication via LoRa

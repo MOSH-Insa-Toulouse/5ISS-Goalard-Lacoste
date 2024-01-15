@@ -107,7 +107,11 @@ The second step is to build the PCB of the shield using these components. As we 
 
 Here is the final version of our PCB :  
 
-![Local Image](image5.png)  A CHANGER
+![Local Image](image9.png)  
+
+And the 3D view to have a better space representation of the PCB :  
+
+![Local Image](image10.png)
 
 All the files and work on KiCad (schematics & routing) are accesible here A CHANGER AUSSI
 

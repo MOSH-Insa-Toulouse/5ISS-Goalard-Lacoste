@@ -42,9 +42,9 @@ We use LTSpice to simulate the behavior of the system and find the cutoff freque
 
 | Filter | Frequency |
 |----------|----------|
-| 1 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/16hz.png) | 16 Hz |
-| 2 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/1.6hz.png) | 1.6 Hz |
-| 3 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/1.6khz.png) | 1.6 kHz |
+| 1 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/16hz.png) | 16 Hz |
+| 2 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/1.6hz.png) | 1.6 Hz |
+| 3 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/1.6khz.png) | 1.6 kHz |
 
 
 ### Data communication via LoRa

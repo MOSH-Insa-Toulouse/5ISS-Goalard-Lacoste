@@ -118,8 +118,9 @@ And the 3D view to have a better space representation of the PCB :
 A short explanation about the files you can find in the various subdirectories :
 * Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
 * Node-RED flow used to intercept the data reissued from ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json).
-* KiCad schematic & PCB [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/tree/main/MyPCB).
 * LTSpice simulations [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/tree/main/LTSpice).
+* KiCad schematic & PCB [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/tree/main/MyPCB).
+
 
 
 ## Improvements

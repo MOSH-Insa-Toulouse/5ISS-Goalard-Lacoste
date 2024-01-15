@@ -31,9 +31,9 @@ The gas sensor was conceived in AIME in october, but we will use a commercial se
 * Low-pass filter for input current noise : R4 - C1
 * Actif filter to reduce 50Hz noise : R3 - C4
 * Output low-pass filter : R5 - C2
-* Gas sensor : we create a component with the relation I=V(cp,cn)*(10n+v(gc,gn)*10n)) that represent it 
+* Gas sensor : we create a component that represent it with the relation => I=V(cp,cn)*(10n+v(gc,gn)*10n)).
 
-![Local Image](image6.png)  !CHANGER
+![Local Image](image6.png)
 
 We use LTSpice to simulate the behavior of the system and find the cutoff frequency of each filter :
 

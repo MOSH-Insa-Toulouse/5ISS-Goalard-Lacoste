@@ -29,7 +29,7 @@ The sensor parts are described in the following schema :
 
 The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an amplifier circuit.
 
-![Local Image](image6.png)
+![Local Image](image7.png)
 
  It is composed as follow :
  

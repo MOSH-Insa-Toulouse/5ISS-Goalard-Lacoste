@@ -107,7 +107,7 @@ The second step is to build the PCB of the shield using these components. As we 
 
 Here is the final version of our PCB :  
 
-![Local Image](images/image9.png)  
+![Local Image](images/image11.png)  
 
 And the 3D view to have a better space representation of the PCB :  
 

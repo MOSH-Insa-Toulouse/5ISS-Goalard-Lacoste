@@ -119,14 +119,14 @@ All the files and work on KiCad (schematics & routing) are accesible here A CHAN
 A short explanation about the files you can find in the various subdirectories :
 * Arduino code used to retrieve the gas sensor measurements and send them to the gateway [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Capteur_Gaz/Capteur_Gaz.ino).
 * Node-RED flow used to intercept the data reissued from ChirpStack [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Node-RED/flows.json).
-* [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/tree/main/MyPCB).
+* KiCad schematic & PCB [here](https://github.com/patatorfr/5ISS-Goalard-Lacoste/tree/main/MyPCB).
 * A AJOUTER
 
 
 ## Improvements
 These are a few ideas we had to improve our system but couldn't find time to do :
 * Node-RED :  we display the data, but we could use existing dashboards to get a better view of gas concentrations.
-* PCB :  improve the design by ..................
+* PCB :  improve the design, take less space, reduce energy loss and so on.
 * Potentiometer control : write some code to control the potentiometer from the arduino, to get closer to real use.
 * Sensor programming : write some code to control the sensor, do the calibration, gas recognition... => make it as autonomous as possible.
 * End-to-end test : print the PCB, weld all the components and use it in a real applicatio, from data collection to retrieving via Node-RED.

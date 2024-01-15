@@ -27,6 +27,7 @@ The sensor parts are described in the following schema :
 
 ![Local Image](images/image1.png)
 
+For all the sensor information, please refer to the [datasheet](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/image8.png)
 The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an amplifier circuit.
 
 ![Local Image](images/image7.png)

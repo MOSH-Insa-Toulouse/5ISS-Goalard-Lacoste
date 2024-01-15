@@ -29,25 +29,7 @@ The sensor parts are described in the following schema :
 
 For all the sensor information, please refer to the [datasheet](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/Datasheet/Datasheet.pdf).
 
-The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an amplifier circuit.
-
-![Local Image](images/image7.png)
-
- It is composed as follow :
- 
-* Low-pass filter for input current noise : R4 - C1
-* Actif filter to reduce 50Hz noise : R3 - C4
-* Output low-pass filter : R5 - C2
-* [Gas sensor](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/image8.png) : we create a component that represent it with the relation => I=V(cp,cn)*(10n+v(gc,gn)*10n)).
-
-We use LTSpice to simulate the behavior of the system and find the cutoff frequency of each filter :
-
-| Filter | Frequency |
-|----------|----------|
-| 1 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/16hz.png) | 16 Hz |
-| 2 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/1.6hz.png) | 1.6 Hz |
-| 3 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/1.6khz.png) | 1.6 kHz |
-
+The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons.    
 
 ### Data communication via LoRa
 Now we have a working sensor, we want to be able to send the retrieved data. To do so, we will use LoRa protocol and the gateway accessible at INSA via ChirpStack.
@@ -103,6 +85,27 @@ First, let's have a look at the various components of the shield :
 * Variable resistor :      
   As our sensor contains an intern heating resistor, we need to use a variable resistor to adapt the input current and assure it stay in the same range (not to low so the ADC can see it, but not too high so we don't kill the Arduino). The resistor is controlled 
   directly from the Arduino, which allows us to know the 'transformation' done to the current. Using it, we assure a proper functioning of the Arduino, and are still able to provide a good measurement of the gas concentration.
+
+As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an amplifier circuit.
+
+![Local Image](images/image7.png)
+
+ It is composed as follow :
+ 
+* Low-pass filter for input current noise : R4 - C1
+* Actif filter to reduce 50Hz noise : R3 - C4
+* Output low-pass filter : R5 - C2
+* [Gas sensor](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/image8.png) : we create a component that represent it with the relation => I=V(cp,cn)*(10n+v(gc,gn)*10n)).
+
+We use LTSpice to simulate the behavior of the system and find the cutoff frequency of each filter :
+
+| Filter | Frequency |
+|----------|----------|
+| 1 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/16hz.png) | 16 Hz |
+| 2 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/1.6hz.png) | 1.6 Hz |
+| 3 [simulation](https://github.com/patatorfr/5ISS-Goalard-Lacoste/blob/main/images/1.6khz.png) | 1.6 kHz |
+
+
 
 
 The second step is to build the PCB of the shield using these components. As we were supposed to use INSA's equipement to print the PCB, our constraint was to use only one layer.  

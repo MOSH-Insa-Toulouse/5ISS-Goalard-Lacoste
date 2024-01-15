@@ -29,7 +29,7 @@ The sensor parts are described in the following schema :
 
 The gas sensor was conceived in AIME in october, but we will use a commercial sensor in the next steps of the project for simplicity reasons. As the sensor resistance is huge, and it varies depending on the gas it measures and its concentration, the input current of the Arduino will be very low. To make it usable, we need to increase the current value, which will be done using an amplifier circuit.
 
-![Local Image](image7.png)
+![Local Image](images/image7.png)
 
  It is composed as follow :
  
@@ -56,11 +56,11 @@ In order to achieve the communication, we need a few elements :
   
 First, we use the RN2483 datasheet and choose the pins to use to connect it to the Arduino UNO :
 
-![Local Image](image2.png)
+![Local Image](images/image2.png)
 
 The chosen pins are welded, then the module is connected to the arduino using wires and a breadboard :
 
-<img src="image3.jpg" alt="Description" width="328"/>   <img src="image4.jpg" alt="Description" width="300"/>
+<img src="images/image3.jpg" alt="Description" width="328"/>   <img src="images/image4.jpg" alt="Description" width="300"/>
 
 To send data using LoRa from the INSA, we have to use a gateway accessible through ChirpStack framework. We reuse an already existing Arduino code modified as follow :
 * Connect to the gateway using our specific credentials
@@ -72,7 +72,7 @@ You can find the Arduino code [here](https://github.com/patatorfr/5ISS-Goalard-L
 
 Now the data from the gas sensor can be send out using the gateway, the last step is to make the emitted data accessible. To do it, we use Node-RED and retrieve the data sent from ChirpStack as MQTT packets. We therefore use a function to decode the received data, as ChirpStack send them using base 64, and post a text of the final value : 
 
-![Local Image](node_red_screen.png)
+![Local Image](images/node_red_screen.png)
 
 To test our system, we displayed the value measured by the sensor in the Arduino IDE, and displayed the same value after getting it on Node-RED. We fortunately displayed twice the same value.
 
@@ -81,7 +81,7 @@ In the previous part, we used a breadboard to connect the sensor to the Arduino.
 
 First, let's have a look at the various components of the shield :   
 
-![Local Image](image5.png)
+![Local Image](images/image5.png)
 
 * Arduino UNO board :   
   Generic board provided by KiCad.
@@ -107,13 +107,12 @@ The second step is to build the PCB of the shield using these components. As we 
 
 Here is the final version of our PCB :  
 
-![Local Image](image9.png)  
+![Local Image](images/image9.png)  
 
 And the 3D view to have a better space representation of the PCB :  
 
-![Local Image](image10.png)
+![Local Image](images/image10.png)
 
-All the files and work on KiCad (schematics & routing) are accesible here A CHANGER AUSSI
 
 ## Delivery
 A short explanation about the files you can find in the various subdirectories :

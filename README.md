@@ -12,7 +12,12 @@ Here is what you can find in this file :
 The main objective of this class is to provide a transversal perspective of the creation of an IoT system. From the solution proposal to the end of system design, we take a look at all the conception steps, trying to merge both the hardware and software requirements.
 
 ## Project desciption
-This project is a multidisciplinary work built around the use of a gas sensor. The idea is the following : we conceived a gas sensor to monitor air quality, and now want to integrate it in on an electronic card (Arduino) to collect data from its environment, then send them over a low speed network. As it is multidisciplinary, we divided the project in various steps : 
+This project is a multidisciplinary work built around the use of a gas sensor. The idea is the following : we conceived a gas sensor to monitor air quality, and now want to integrate it in on an electronic card (Arduino) to collect data from its environment, then send them over a low speed network.
+This is an overview of the architecture :
+
+![Local Image](images/image1.png)
+
+As it is multidisciplinary, we divided the project in various steps : 
 * Gas sensor conception
 * Data communication via LoRa
 * Hardware & PCB design

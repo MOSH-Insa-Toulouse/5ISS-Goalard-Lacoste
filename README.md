@@ -15,7 +15,7 @@ The main objective of this class is to provide a transversal perspective of the 
 This project is a multidisciplinary work built around the use of a gas sensor. The idea is the following : we conceived a gas sensor to monitor air quality, and now want to integrate it in on an electronic card (Arduino) to collect data from its environment, then send them over a low speed network.
 This is an overview of the architecture :
 
-![Local Image](images/image1.png)
+![Local Image](images/archi.png)
 
 As it is multidisciplinary, we divided the project in various steps : 
 * Gas sensor conception
